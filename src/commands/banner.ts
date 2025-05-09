@@ -17,7 +17,7 @@ const createBanner = () : string[] => {
     banner.push(eleToPush);
   });  
   banner.push("<br>");
-  banner.push("backend.wearekhaose.com")
+  banner.push("backend.khaose.com")
   banner.push("v35.0.21");
   banner.push("<br>")
   banner.push("Type <span class='command'>'help'</span> to see a list of all available commands.");
