@@ -69,18 +69,10 @@ Most of the configuration is done in the `config.json` file.
 ## Run the Project Locally:
 
 Clone the repository
-```shell
-git clone https://github.com/nasan016/webshell.git
-```
-Go to the project directory
-```shell
-cd webshell
-```
-Install the dependencies
-```shell
-npm install
-```
-Start the server
-```shell
-npm run dev
+```Run locally:
+- npm run dev
+
+Update changes to production:
+- git add, git commit -m “”, git push
+- vercel —prod  
 ```
