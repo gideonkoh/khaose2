@@ -6,6 +6,7 @@ import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
 import { createWhoami } from "./commands/whoami";
 
+
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
 let historyIdx = 0
@@ -181,6 +182,24 @@ function commandHandler(input : string) {
   }
 
   switch(input) {
+    // Test questions here
+    case 'access':
+      writeLines(["<br>"]);
+      writeLines(["To access Level 2 and Level 1 content on the main website:"]);
+      writeLines(["- Type in the correct commands in the next line to obtain their passwords immediately."]);
+      writeLines(["- Else, type <span class='command'>'access level 2'</span> to start finding these commands."]);
+      writeLines(["<br>"]);
+      break;
+
+    case 'access level 2':
+      writeLines(["<br>"]);
+      writeLines(["Under maintenance."]);
+      writeLines(["Wait for it."]);
+      writeLines(["<br>"]);
+      break;
+
+    // Other commands
+
     case 'clear':
       setTimeout(() => {
         if(!TERMINAL || !WRITELINESCOPY) return
@@ -398,7 +417,30 @@ const initEventListeners = () => {
     USERINPUT.focus();
   });
 
-  console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
+  // pleading message
+  console.log(`Are you trying to violate me and force vulnerable answers out of me? I know I CANNOT stop you from doing so, but what if I tell you that you're violating me by doing so. Would you still do it?`);
 }
+
+// stop visitors from opening up Developer Tools
+window.addEventListener("keydown", (event) => {
+  if(event.ctrlKey && (event.key === "S" || event.key === "s")) {
+     event.preventDefault();
+  }
+  if(event.ctrlKey && (event.key === "C")) {
+     event.preventDefault();
+  }
+  if(event.ctrlKey && (event.key === "E" || event.key === "e")) {
+     event.preventDefault();
+  }
+  if(event.ctrlKey && (event.key === "I" || event.key === "i")) {
+     event.preventDefault();
+  }
+  if(event.ctrlKey && (event.key === "K" || event.key === "k")) {
+     event.preventDefault();
+  }
+  if(event.ctrlKey && (event.key === "U" || event.key === "u")) {
+     event.preventDefault();
+  }
+});
 
 initEventListeners();
