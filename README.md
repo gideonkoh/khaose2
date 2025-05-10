@@ -69,10 +69,14 @@ Most of the configuration is done in the `config.json` file.
 ## Run the Project Locally:
 
 Clone the repository
-```Run locally:
+```
+Run locally:
 - npm run dev
 
 Update changes to production:
 - git add, git commit -m “”, git push
-- vercel —prod  
+- vercel, vercel —prod  
+
+In Vercel:
+- "Framework Settings" > "Framework Preset": "Vite"
 ```
