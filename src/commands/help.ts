@@ -1,30 +1,25 @@
 const helpObj = {
   "commands": [
-    [
-    "'about'",
-    "Who made this website?",
+    ["'outest'",
+      "Return to the outest layer."
     ],
     [
-      "'projects'",
-      "Maybe there's something interesting."
+      "'lyrics'",
+      "Check out the lyrics of each song in the very first EP written by Khaosé."
     ],
     [
-      "'whoami'",
-      "A perplexing question."
+      "'blog'",
+      "Read parts of Khaosé journey - if you're interested that is."
     ],
     [
-      "'repo'",
-      "View the Github Repository."
+      "'photos'",
+      "If you want to see Khaosé being awkward..."
     ],
     ["'banner'",
-      "Display the banner."
+      "Display the banner again."
     ],
-    [
-      "'clear'",
+    ["'clear'",
       "Clear the terminal."
-    ],
-    ["'access'",
-      "Obtain Level 2 and Level 1 access passwords"
     ]
   ],
 }
@@ -45,6 +40,8 @@ const createHelp = () : string[] => {
     help.push(string);
   })
 
+  help.push("<br>");
+  help.push("You may find more commands highlighted by the system when you visit the various pages at the outest layer.");
   help.push("<br>");
   help.push("Press <span class='keys'>[Tab]</span> for auto completion.");
   help.push("Press <span class='keys'>[Esc]</span> to clear the input line.");
