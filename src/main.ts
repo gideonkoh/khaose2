@@ -22,7 +22,6 @@ const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
 const COMMANDS = ["help", "banner", "clear"];
 const HISTORY : string[] = [];
-const REPO_LINK = command.repoLink;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
