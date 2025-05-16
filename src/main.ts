@@ -39,9 +39,7 @@ function userInputHandler(e : KeyboardEvent) {
       e.preventDefault();
       if (!isPasswordInput) {
         enterKey();
-      } else {
-        passwordHandler();
-      }
+      } 
 
       scrollToBottom();
       break;
@@ -169,8 +167,8 @@ function commandHandler(input : string) {
     case 'help':
       writeLines(HELP);
       break;
-    case 'whoami':      
-      writeLines(createWhoami());
+    case 'whoami':     
+    //add stuff here 
       break;
     case 'repo':
       writeLines(["Redirecting to github.com...", "<br>"]);
@@ -242,7 +240,6 @@ const initEventListeners = () => {
   
   USERINPUT.addEventListener('keypress', userInputHandler);
   USERINPUT.addEventListener('keydown', userInputHandler);
-  PASSWORD_INPUT.addEventListener('keypress', userInputHandler);
 
   window.addEventListener('click', () => {
     USERINPUT.focus();
