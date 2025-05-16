@@ -171,10 +171,10 @@ function commandHandler(input : string) {
     //add stuff here 
       break;
     case 'repo':
-      writeLines(["Redirecting to github.com...", "<br>"]);
-      setTimeout(() => {
-        window.open(REPO_LINK, '_blank');
-      }, 500);
+      //writeLines(["Redirecting to github.com...", "<br>"]);
+      //setTimeout(() => {
+      //  window.open(REPO_LINK, '_blank');
+      //}, 500);
       break;
     case 'linkedin':
       //add stuff here
