@@ -18,7 +18,7 @@ const createBanner = () : string[] => {
   });  
   banner.push("<br>");
   banner.push("backend.khaose.com")
-  banner.push("v35.0.21");
+  banner.push("v36.0.0");
   banner.push("<br>")
   banner.push("Welcome. You're currently at the outer layer.");
   banner.push("<br>")
