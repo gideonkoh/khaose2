@@ -8,16 +8,13 @@ let mutWriteLines = document.getElementById("write-lines");
 let historyIdx = 0
 let tempInput = ""
 let userInput : string;
-let isSudo = false;
 let isPasswordInput = false;
-let passwordCounter = 0;
 let bareMode = false;
 
 //WRITELINESCOPY is used to during the "clear" command
 const WRITELINESCOPY = mutWriteLines;
 const TERMINAL = document.getElementById("terminal");
 const USERINPUT = document.getElementById("user-input") as HTMLInputElement;
-const INPUT_HIDDEN = document.getElementById("input-hidden");
 const PRE_HOST = document.getElementById("pre-host");
 const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
