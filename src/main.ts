@@ -142,6 +142,13 @@ function commandHandler(input : string) {
       }, 500);
       break;
 
+    case 'lyrics':
+      writeLines(["Opening up khaose.com/lyrics-booklet...", "<br>"]);
+      setTimeout(() => {
+       window.open("https://khaose.com/lyrics-booklet", '_blank');
+      }, 500);
+      break;
+
     case 'letter':
       writeLines(["Ah, do you mean the letter that I received from the future?"]);
       writeLines(["I’m sorry, I don’t know if I can share them with you yet."]);
